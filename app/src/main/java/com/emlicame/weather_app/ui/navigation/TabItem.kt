@@ -1,6 +1,10 @@
 package com.emlicame.weather_app.ui.navigation
 
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.CalendarToday
+import androidx.compose.material.icons.filled.CalendarViewWeek
 
 /**
  * Sealed class representing the weather app tabs.
@@ -34,11 +38,11 @@ sealed class TabItem(
     )
 
     data object Today : TabItem(
-        "Today", Icons.Default.DataRange, "today"
+        "Today", Icons.Default.CalendarToday, "today"
     )
 
     data object Weekly : TabItem(
-        "Weekly", Icons.Default.List, "weekly"
+        "Weekly", Icons.Default.CalendarViewWeek, "weekly"
     )
 
     // Helper to get tab by index, safe against out-of-bounds access
@@ -47,7 +51,7 @@ sealed class TabItem(
          * All tabs in display order.
          * Immutable list ensures consistency across the app.
          */
-        private val allTabs: List<TabItem> =
+        val allTabs: List<TabItem> =
             listOf(Currently, Today, Weekly)
 
         /**
@@ -59,9 +63,12 @@ sealed class TabItem(
 
         /**
          * Get tab by route string (useful for navigation).
+         * Returns null if no matching tab found. Caller MUST handle null, making the error visible
          */
-        fun getByRoute(route: String): TabItem? =
-            allTabs.find { it.route == route }
+//        fun getByRoute(route: String): TabItem? =
+//            allTabs.find { it.route == route }
+        fun getByRoute(route: String): TabItem =
+            allTabs.find { it.route == route } ?: Currently
 
     }
 

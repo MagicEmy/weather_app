@@ -14,7 +14,7 @@ import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun CurrentlyScreen(
+fun TodayScreen(
     searchQuery: String = ""
 ) {
     Box(
@@ -24,7 +24,7 @@ fun CurrentlyScreen(
         contentAlignment = Alignment.Center
     ) {
         Text(
-            text = buildScreenText("Currently", searchQuery),
+            text = buildScreenText("Today", searchQuery),
             style = MaterialTheme.typography.headlineMedium,
             textAlign = TextAlign.Center
         )
@@ -34,16 +34,15 @@ fun CurrentlyScreen(
 
 @PreviewLightDark
 @Composable
-fun CurrentlyScreenPreview() {
-    MaterialTheme {
-        CurrentlyScreen("San Francisco")
-    }
+fun TodayScreenPreview() {
+    TodayScreen("San Francisco")
 }
 
+@PreviewLightDark
 @Preview(showBackground = true)
 @Composable
-fun CurrentlyScreenEmptyPreview() {
+fun TodayScreenEmptyPreview() {
     MaterialTheme {
-        CurrentlyScreen()
+        TodayScreen()
     }
 }

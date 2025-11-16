@@ -10,11 +10,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 
+/**
+ * Weekly tab screen - displays 7-day forecast.
+ */
 @Composable
-fun CurrentlyScreen(
+fun WeeklyScreen(
     searchQuery: String = ""
 ) {
     Box(
@@ -24,26 +26,17 @@ fun CurrentlyScreen(
         contentAlignment = Alignment.Center
     ) {
         Text(
-            text = buildScreenText("Currently", searchQuery),
+            text = buildScreenText("Today", searchQuery),
             style = MaterialTheme.typography.headlineMedium,
             textAlign = TextAlign.Center
         )
     }
 }
 
-
-@PreviewLightDark
-@Composable
-fun CurrentlyScreenPreview() {
-    MaterialTheme {
-        CurrentlyScreen("San Francisco")
-    }
-}
-
 @Preview(showBackground = true)
 @Composable
-fun CurrentlyScreenEmptyPreview() {
+private fun WeeklyScreenPreview() {
     MaterialTheme {
-        CurrentlyScreen()
+        WeeklyScreen()
     }
 }
