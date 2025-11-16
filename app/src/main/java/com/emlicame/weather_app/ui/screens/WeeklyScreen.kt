@@ -26,7 +26,7 @@ fun WeeklyScreen(
         contentAlignment = Alignment.Center
     ) {
         Text(
-            text = buildScreenText("Today", searchQuery),
+            text = buildScreenText("Weekly", searchQuery),
             style = MaterialTheme.typography.headlineMedium,
             textAlign = TextAlign.Center
         )
