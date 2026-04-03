@@ -111,7 +111,7 @@ This project is divided into **5 progressive modules**, each building upon the p
 
 ## 🛠️ Technology Stack
 
-- **Framework:** Flutter/React Native/Kotlin (based on your implementation)
+- **Framework:**  Native/Kotlin 
 - **Authentication:** Firebase Auth / OAuth 2.0
 - **Database:** Firebase Firestore / Cloud Database
 - **APIs:** 
@@ -131,53 +131,7 @@ This project is divided into **5 progressive modules**, each building upon the p
 
 ---
 
-## 🚀 Getting Started
 
-### Module 01 - Structure and Logic (Current)
-
-```bash
-# Clone the repository
-git clone [repo-url]
-
-# Navigate to Module 01
-cd mobileModule01/weather_app
-
-# Install dependencies
-[your package manager install command]
-
-# Run the application
-[your run command]
-```
-
-**Current functionality:**
-1. Launch the app - defaults to "Currently" tab
-2. Enter a city name in search bar - displays across all tabs
-3. Click geolocation button - shows "Geolocation" text
-4. Switch tabs by tapping or swiping
-
----
-
-## 📚 Module Progression Guide
-
-Each module builds on the previous one by copying and extending functionality:
-
-1. **Complete current module** requirements
-2. **Copy project** to new module folder
-3. **Add new features** as specified
-4. **Test thoroughly** before moving forward
-5. **Submit for peer evaluation**
-
----
-
-## ✅ Current Progress
-
-- [x] Module 01: Basic structure with navigation (COMPLETED)
-- [ ] Module 02: API integration and geolocation
-- [ ] Module 03: Professional design and visualization
-- [ ] Module 04: Authentication and database
-- [ ] Module 05: Advanced features and analytics
-
----
 
 ## 🎯 Learning Objectives
 
@@ -200,18 +154,4 @@ Throughout this project series, you'll learn:
 
 - Weather API: [OpenMeteo Documentation](https://open-meteo.com/)
 - Geocoding API: [OpenMeteo Geocoding](https://open-meteo.com/en/docs/geocoding-api)
-- [Your framework documentation links]
 
----
-
-## 🎓 Acknowledgments
-
-- Piscine Mobile curriculum designers
-- Peer evaluators and fellow students
-- API providers (OpenMeteo)
-
----
-
-**Last Updated:** 23-01-2026  
-**Current Module:** 01 - Structure and Logic  
-**Next Milestone:** API Integration (Module 02)
