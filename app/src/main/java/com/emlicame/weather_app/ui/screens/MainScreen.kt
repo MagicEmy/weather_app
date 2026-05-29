@@ -73,12 +73,3 @@ fun MainScreen() {
         }
     )
 }
-/**
- * Pattern: Single Source of Truth**
- *
- * User types "Paris" → onSearchQueryChange("Paris")
- *                   → searchQuery = "Paris"
- *                   → Recomposition
- *                   → All screens receive "Paris"
- *                   → All show "Currently Paris", "Today Paris", etc.
- */

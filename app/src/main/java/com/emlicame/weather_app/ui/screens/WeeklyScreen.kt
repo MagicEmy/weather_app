@@ -12,9 +12,6 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
-/**
- * Weekly tab screen - displays 7-day forecast.
- */
 @Composable
 fun WeeklyScreen(
     searchQuery: String = ""

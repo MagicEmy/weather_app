@@ -9,10 +9,3 @@ internal fun buildScreenText(screenName: String, query: String): String {
         "$screenName\n$query"
     }
 }
-
-/***
- * public (default): Visible everywhere
- * private: Only visible in this file
- * internal: Only visible within the same module (app)
- * protected: Only visible in subclasses
- */
