@@ -14,23 +14,10 @@ import com.emlicame.weather_app.ui.navigation.TabItem
 import kotlinx.coroutines.launch
 /**
 * Main screen container managing state for the weather app.
-*
-* This is the CONTAINER in the Container-Presenter pattern. It manages:
-* - Tab selection state
-* - Search query state
-* - Pager state
-* - Event handlers for user interactions
-*
 * STATE MANAGEMENT:
 * - selectedTabIndex: Which tab is currently active (0-2)
 * - searchQuery: Current search text or "Geolocation"
 * - pagerState: Controls which page is displayed and animations
-*
-* EVENT HANDLING:
-* - Tab clicks: Updates index and animates pager
-* - Search text changes: Updates query state
-* - Geolocation clicks: Sets query to "Geolocation"
-* - Pager swipes: Syncs selected tab index
 */
 @Composable
 fun MainScreen() {

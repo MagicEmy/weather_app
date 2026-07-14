@@ -170,7 +170,7 @@ private fun WeatherBottomNavigation(
     onTabSelected: (Int) -> Unit
 ) {
     NavigationBar {
-        TabItem.Companion.allTabs.forEachIndexed { index, tabItem ->
+        TabItem.allTabs.forEachIndexed { index, tabItem ->
             NavigationBarItem(
                 selected = selectedTabIndex == index,
                 onClick = { onTabSelected(index) },
@@ -225,12 +225,3 @@ private fun MainScreenWithQueryPreview() {
         onGeolocationClick = {}
     )
 }
-
-/**
- * @Composable
- * fun AnalyticsButton(
- *     text: String,
- *     onClick: () -> Unit,
- *     onLongClick: () -> Unit = {}  // Optional long-press handling
- * )
- */
